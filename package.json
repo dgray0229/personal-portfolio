@@ -28,7 +28,7 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -43,7 +43,8 @@
     "serve": "gatsby serve",
     "publish": "gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "npm run format && npm run build && npm run publish"
+    "deploy": "npm run format && npm run build && npm run publish",
+    "deploy:pages": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
